@@ -9,3 +9,4 @@
   (test/is (divisible-by? 6 [3 7]))
   (test/is (divisible-by? 6 [3 2]))
   (test/is (not (divisible-by? 10 [ 7 3 ]))))
+
