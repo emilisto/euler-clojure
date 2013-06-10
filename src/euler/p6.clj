@@ -3,9 +3,9 @@
   ;; clojure.contrib.math has been moved to 'numeric-tower'. This
   ;; required some fiddling with lein and editing of project.clj to
   ;; get it worked.
-  (:require [clojure.math.numeric-tower :as math]))
+  (:use euler.lib))
 
-(defn square [n] (math/expt n 2))
+
 
 (defn euler-p6
   []

@@ -1,5 +1,6 @@
 (ns euler.lib
-  (:require [clojure [test :as test]]))
+  (:require [clojure [test :as test]])
+  (:require [clojure.math.numeric-tower :as math]))
 
 (test/with-test
   (defn generate-primes [limit]
@@ -60,3 +61,4 @@
   (test/is (divisible-by? 6 [3 2]))
   (test/is (not (divisible-by? 10 [ 7 3 ]))))
 
+(defn square [n] (math/expt n 2))
