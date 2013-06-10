@@ -25,6 +25,13 @@
     ))
 
 (test/with-test
+  (defn is-divisor?
+   [num, divisor]
+   (= 0 (rem num divisor)))
+  (test/is (is-divisor? 8 2))
+  )
+
+(test/with-test
   (defn prime-factor [n]
     (loop [factors []
            n n,
@@ -39,13 +46,6 @@
          :else (recur factors n (nthrest candidates 1))
          ))))
   (test/is (= '(2 3 3 5 7 19) (prime-factor 11970))))
-
-(test/with-test
-  (defn is-divisor?
-   [num, divisor]
-   (= 0 (rem num divisor)))
-  (test/is (is-divisor? 8 2))
-  )
 
 (test/with-test
   (defn factor [n]
