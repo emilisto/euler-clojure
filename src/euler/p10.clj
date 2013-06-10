@@ -11,5 +11,4 @@
 
 (defn euler-p10
   []
-  (sum-primes-below 2000000)
-  )
+  (sum-primes-below 2000000))
